@@ -12,6 +12,14 @@ public abstract class charather : MonoBehaviour
     protected Animator Anim;
     protected Rigidbody2D rb;
 
+    public void Initialize(int startHealth)
+    { 
+        health = startHealth;
+        Debug.Log($"{this.name} health : {this.health}");
+
+        Anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+    }
     public void TakeDamage(int damage)
     {
         health -= damage;
