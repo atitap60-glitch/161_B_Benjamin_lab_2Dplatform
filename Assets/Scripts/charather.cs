@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class charather : MonoBehaviour
+public abstract class Character : MonoBehaviour
 {
     private int health;
     private int Health 
@@ -24,7 +24,8 @@ public abstract class charather : MonoBehaviour
     {
         health -= damage;
         Debug.Log($"{this.name} ouch . . {damage} || health remain {Health}");
-        
+
+        isDead();
     }
 
     public bool isDead()
@@ -32,12 +33,12 @@ public abstract class charather : MonoBehaviour
         if (health <= 0)
         {
             Destroy(this.gameObject);
-            return false;
+            return true;
         }
         else { return false; }
     }
 
-        
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

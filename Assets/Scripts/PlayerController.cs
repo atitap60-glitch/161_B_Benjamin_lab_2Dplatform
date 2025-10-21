@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : charather {
+public class PlayerController : Character
+{
 
 	public float maxSpeed = 10f;
 	bool facingRight = true;
+
 
 	Rigidbody2D r2d;
 	Animator anim;

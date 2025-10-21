@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class enemy : charather
+public abstract class enemy : Character
 {
     public int DamageHit { get; protected set; }
     public abstract void behavior();
