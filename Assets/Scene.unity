@@ -878,7 +878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 491758, guid: 3eeab7ca4bdca4ba382826bdc99b4911, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.26
+      value: 1.36
       objectReference: {fileID: 0}
     - target: {fileID: 491758, guid: 3eeab7ca4bdca4ba382826bdc99b4911, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2144,7 +2144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 463676, guid: 9c82cefa3535e4633908fc0185c960ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.28
+      value: -1.3
       objectReference: {fileID: 0}
     - target: {fileID: 463676, guid: 9c82cefa3535e4633908fc0185c960ed, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2391,7 +2391,7 @@ Transform:
   m_GameObject: {fileID: 888388132}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 1.08, z: 0}
+  m_LocalPosition: {x: -5, y: 1.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3777,12 +3777,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   maxSpeed: 10
+  jumpForce: 300
   grounded: 1
   groundCheck: {fileID: 2046459750}
+  groundRadius: 0.2
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 0
-  jumpForce: 700
+    m_Bits: 64
 --- !u!50 &1261675305
 Rigidbody2D:
   serializedVersion: 5
@@ -4491,7 +4492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 449836, guid: 9438be3cda5b74d7c81901b9e0d831a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.28
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 449836, guid: 9438be3cda5b74d7c81901b9e0d831a1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4822,7 +4823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 443456, guid: 0cc53454d87ad45c3bafdbf11b7d3b32, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.65
+      value: 16.63
       objectReference: {fileID: 0}
     - target: {fileID: 443456, guid: 0cc53454d87ad45c3bafdbf11b7d3b32, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6053,7 +6054,7 @@ Transform:
   m_GameObject: {fileID: 1768614124}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.24, y: 1.08, z: 0}
+  m_LocalPosition: {x: -2.01, y: 1.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6300,11 +6301,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 485146, guid: 6dde6029886a24408b05eced6b5964a6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.27
+      value: -9.53
       objectReference: {fileID: 0}
     - target: {fileID: 485146, guid: 6dde6029886a24408b05eced6b5964a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.96
+      value: -0.72
       objectReference: {fileID: 0}
     - target: {fileID: 485146, guid: 6dde6029886a24408b05eced6b5964a6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7014,7 +7015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 443456, guid: 0cc53454d87ad45c3bafdbf11b7d3b32, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.48
+      value: 17.83
       objectReference: {fileID: 0}
     - target: {fileID: 443456, guid: 0cc53454d87ad45c3bafdbf11b7d3b32, type: 3}
       propertyPath: m_LocalPosition.y
